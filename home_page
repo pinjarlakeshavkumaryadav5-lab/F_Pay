@@ -1,0 +1,55 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./Home.css";
+
+function HomePage() {
+  const navigate = useNavigate();
+
+  return (
+    <div className="home-container">
+
+      <div className="logo-container">
+
+        <div className="logo">
+          F
+        </div>
+
+        <h1 className="title">
+          F Pay
+        </h1>
+
+        <p className="subtitle">
+          Fast • Secure • Smart Fee Payments
+        </p>
+
+      </div>
+
+      <div className="button-container">
+
+        <button
+          className="register-btn"
+          onClick={() => navigate("/register")}
+        >
+          Register
+        </button>
+
+        <button
+          className="login-btn"
+          onClick={() => navigate("/login")}
+        >
+          Login
+        </button>
+
+      </div>
+
+      <footer>
+
+        Version 1.0
+
+      </footer>
+
+    </div>
+  );
+}
+
+export default HomePage;
